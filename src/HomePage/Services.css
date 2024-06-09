@@ -1,0 +1,94 @@
+.ServicePageHeading h1{
+font-size: 5vw;
+font-weight: 700;
+flex-direction: column;
+text-decoration: underline;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.ServicePageHeading h2{
+font-size:1vw;
+text-decoration: wavy;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.mainService{
+    background-color: white;
+    color: black;
+}
+.ProvidedServices {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    /* width: 100vw; */
+    justify-content: space-around;
+    
+}
+#product_img{
+    width: 50vw;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+    /* min-height: 50vh; */
+    aspect-ratio: 3/2;
+}
+.ServiceDetail{
+    gap: 5px;
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    
+    width: 25vw;
+    height: fit-content;
+    flex-direction: column;
+}
+.ServiceDetail img{
+   width:25vw ;
+}
+.propteries{
+    width: 25vw;
+}
+.propteries1{
+    width: 25vw;
+    text-wrap: wrap;
+}
+#headingprops{
+font-weight: bolder;
+font-size: x-large;
+color: black;
+text-align: center;
+
+}
+
+@media (max-width:600px) {
+.ServicePageHeading h1,h2{
+    display: flex;
+    }
+
+.ServicePageHeading h2{
+    font-size: 15px;
+}
+
+.ServiceDetail{
+    display: flex;
+    flex-wrap: wrap;
+    width:70vw;
+}
+.ServiceDetail img{
+   height: 30vh;
+   width: fit-content;
+}
+.propteries{
+    width: 55vw;
+}
+.propteries1{
+    width: 55vw;
+    text-wrap: wrap;
+}
+
+
+
+    }

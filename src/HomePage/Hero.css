@@ -1,0 +1,38 @@
+#paragraph{
+    width: 50vw;
+    display: flex;
+    /* align-items: center; */
+    padding-top: 50px;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: bolder;
+}
+.fpage{
+    width: 100vw;
+    height: 100vh;
+}
+#imagediv{
+    width: 50vw;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+#selective_img{
+    
+    width: 30vw;
+}
+#division_para{
+    /* width: 50vw; */
+    font-family: "Raleway";
+    font-size: 50px;
+    width: 25vw;
+
+  
+}
+#description{
+    width:24vw;
+    font-weight: normal;
+    font-family: "Raleway";
+    font-size: large;
+}
