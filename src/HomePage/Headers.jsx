@@ -35,9 +35,9 @@ function Header() {
         className="intro"
       >
        <ul className='ul'>
-        <li>Home</li>
-        <li>   <Link to={"/Product"}>Product</Link>  </li>
-        <li>Contact us </li>
+        <li> <Link to={"/"}>Home</Link> </li>
+        <li>   <Link to={"/Brochure"}>Brochure</Link>  </li>
+        <li> <Link to={"/Contact"}>Contact us</Link>  </li>
         {/* <li>Hello</li> */}
        </ul>
       </motion.div>

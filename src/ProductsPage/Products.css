@@ -1,0 +1,17 @@
+.productImg{
+    width: 20vw;
+    /* display: flex; */
+    padding: 15px;
+    /* margin-bottom: 5px; */
+    margin: 15px;
+    mix-blend-mode: multiply;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.Divisons{
+    display: flex;
+    /* justify-content: center; */
+   gap: 80px;
+    /* align-items: center; */
+
+}

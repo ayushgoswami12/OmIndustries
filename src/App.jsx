@@ -1,11 +1,19 @@
 
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
-import Services from "./HomePage/Services.jsx";
+
+import Brochure from "./Brochure/Brochure.jsx";
+import Contact from "./Contact/Contact.jsx";
+import Gooseneck from "./ProductsPage/Gooseneck.jsx";
+import Nozzle from "./ProductsPage/Noozle.jsx";
 
 let routes = createBrowserRouter([
   {path:"/" , element:<HomePage></HomePage>} , 
-  {path:"/Products", element:<Services />} , 
+  {path:"/Brochure", element:<Brochure />} , 
+  {path:"/Contact", element:<Contact />} , 
+  {path:"/Product/gooseneck", element:<Gooseneck></Gooseneck>} , 
+  {path:"/Product/nozzle", element:<Nozzle></Nozzle>} , 
+  // {path:"/Contact", element:<Contact />} , 
  
 
  

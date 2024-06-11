@@ -1,0 +1,34 @@
+form{
+    flex-direction: column;
+    display: flex;
+    /* margin: 50px; */
+    align-items: center;
+    /* justify-content:space-around; */
+ }
+ label{
+    text-align: right;
+ }
+ input{
+    background-color: rgb(225, 13, 98);
+ 
+ 
+    padding: 5px;
+    width: 30vw;
+    margin: 5px;
+ }
+ textarea{
+    color: rgb(201, 44, 44);
+ background-color: rgb(225, 13, 98);
+ 
+    color: black;
+    width: 30vw;
+ }
+ #final{
+ color: white;
+ background-color: cadetblue;
+ 
+ }
+ #final:hover{
+ cursor: pointer;
+ background-color: rgb(225, 13, 98);
+ }

@@ -23,6 +23,7 @@ justify-content: center;
 .ProvidedServices {
     display: flex;
     gap: 5px;
+    /* background-color: w; */
     flex-wrap: wrap;
     /* width: 100vw; */
     justify-content: space-around;
@@ -40,13 +41,22 @@ justify-content: center;
     display: flex;
     margin: 15px;
     padding: 15px;
-    
+  
+    background-color: white;
     width: 25vw;
     height: fit-content;
     flex-direction: column;
 }
+.ServiceDetail:hover{
+    cursor: pointer;
+
+}
+.ServiceDetail img:hover{
+    transform: scale(1.07);
+}
 .ServiceDetail img{
    width:25vw ;
+   transition: transform 0.3s ease;
 }
 .propteries{
     width: 25vw;
@@ -62,7 +72,12 @@ color: black;
 text-align: center;
 
 }
-
+.mainService:hover{
+    /* background-color: rgba(245, 141, 5, 0.831); */
+    background-color: #9aa9b9e5;
+    position: relative;
+    cursor: context-menu;
+}
 @media (max-width:600px) {
 .ServicePageHeading h1,h2{
     display: flex;
@@ -75,6 +90,7 @@ text-align: center;
 .ServiceDetail{
     display: flex;
     flex-wrap: wrap;
+    
     width:70vw;
 }
 .ServiceDetail img{

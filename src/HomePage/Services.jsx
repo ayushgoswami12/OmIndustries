@@ -14,6 +14,7 @@ import Product13 from "../assets/Product13.jpg"
 import Product14 from "../assets/Product14.jpg"
 import Product15 from "../assets/Product15.jpg"
 import Product16 from "../assets/Product16.jpg"
+import { Link } from "react-router-dom";
 
 
 
@@ -32,9 +33,12 @@ import Product16 from "../assets/Product16.jpg"
 function ServicesProp (propshere){
 return(
     <>
+         <Link to={`/product/${propshere.id}`}>
+
         <img id="product_img" src={propshere.img}></img>
         <h1 id="headingprops" className="propteries">{propshere.heading}</h1>
         <h2 className="propteries1">{propshere.description}</h2>
+         </Link>
      
     </>
 )
@@ -53,13 +57,20 @@ function Services() {
     <div className="ProvidedServices">
 
 
+    
+
+   
     <motion.div 
       initial={{ opacity: 0, x: -10 }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, x: 0 }}
-    className="ServiceDetail">
+    className="ServiceDetail border-2">
     <ServicesProp 
-    img = {Product15}
+
+   
+
+     img = {Product15}
+     id="Gooseneck"
     heading = "Gooseneck"
     // description = "This is me here"
     button = "Click"
@@ -67,11 +78,12 @@ function Services() {
     </motion.div>
 
 
+
     <motion.div
      initial={{ opacity: 0, y: -10 }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, x: 0 }}
-     className="ServiceDetail">
+     className="ServiceDetail border-2 ">
 
 
     <ServicesProp 
@@ -87,21 +99,23 @@ function Services() {
      initial={{ opacity: 0, y: -10 }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, x: 0 }}
-     className="ServiceDetail">
+     className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product14}
     heading = " Nozzle Socket  " 
     // description = "This is me here "
     />
     </motion.div>
+
     <motion.div
      initial={{ opacity: 0, y: -10 }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, x: 0 }}
-     className="ServiceDetail">
+     className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product16}
     heading = " Nozzle " 
+    id="Nozzle"
     // description = "This is me here "
     />
     </motion.div>
@@ -112,7 +126,7 @@ function Services() {
     <motion.div initial={{ opacity: 0,  }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, x: 0 }}
-         className="ServiceDetail">
+         className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product2}
     heading = "Ring"
@@ -132,7 +146,7 @@ function Services() {
      initial={{ opacity: 0, y: -10 }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, y: 0 }}
-     className="ServiceDetail">
+     className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product3}
     heading = "SEO FRIENDLY  " 
@@ -150,7 +164,7 @@ function Services() {
      initial={{ opacity: 0, x: -10 }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, x: 0 }}
-     className="ServiceDetail">
+     className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product4}
     heading = "SEO FRIENDLY DIGITAL " 
@@ -169,7 +183,7 @@ function Services() {
      initial={{ opacity: 0, }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, x: 0 }}
-     className="ServiceDetail">
+     className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product5}
     heading="Heater Sensor "
@@ -189,7 +203,7 @@ function Services() {
      initial={{ opacity: 0, y: -10 }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, x: 0 }}
-     className="ServiceDetail">
+     className="ServiceDetail border-2">
 
 
     <ServicesProp 
@@ -203,7 +217,7 @@ function Services() {
      initial={{ opacity: 0, y: -10 }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, x: 0 }}
-     className="ServiceDetail">
+     className="ServiceDetail border-2">
 
 
     <ServicesProp 
@@ -218,7 +232,7 @@ function Services() {
      initial={{ opacity: 0, y: -10 }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, x: 0 }}
-     className="ServiceDetail">
+     className="ServiceDetail border-2">
 
 
     <ServicesProp 
@@ -235,7 +249,7 @@ function Services() {
      initial={{ opacity: 0, y: -10 }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, x: 0 }}
-     className="ServiceDetail">
+     className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product8}
     heading = " Heater  " 
@@ -249,7 +263,7 @@ function Services() {
      initial={{ opacity: 0, y: -10 }}
         transition={{ duration: 1.5, delay: 0.1 }}
         whileInView={{ opacity: 1, x: 0 }}
-     className="ServiceDetail">
+     className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product13}
     heading = " Studs  " 
