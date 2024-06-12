@@ -18,6 +18,11 @@ justify-content: center;
 
 .mainService{
     background-color: white;
+    /* height: 100vh; */
+    
+     /* backgroundPosition: 'left bottom'; */
+        transition: 'background-position 0.5s ease';
+    /* transition: background-color 1s ease; */
     color: black;
 }
 .ProvidedServices {
@@ -91,17 +96,17 @@ text-align: center;
     display: flex;
     flex-wrap: wrap;
     
-    width:70vw;
+    width:40vw;
 }
 .ServiceDetail img{
-   height: 30vh;
+   height:30vh;
    width: fit-content;
 }
 .propteries{
-    width: 55vw;
+    width: 35vw;
 }
 .propteries1{
-    width: 55vw;
+    width: 35vw;
     text-wrap: wrap;
 }
 

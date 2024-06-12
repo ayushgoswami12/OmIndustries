@@ -1,4 +1,5 @@
 
+import Footer from '../Footer/Footer'
 import Header from './Headers'
 import Hero from './Hero'
 import Services from "./Services"
@@ -12,6 +13,7 @@ function Homepage() {
       <Hero></Hero>
     </div>
       <Services></Services>
+      <Footer></Footer>
     </>
   )
 }

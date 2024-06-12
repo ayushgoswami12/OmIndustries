@@ -5,7 +5,7 @@ import Product15 from "../assets/Product15.jpg"
 
 function Product1() {
   let dimension1 = 32
-  let dimension2 = 20
+  let dimension2 = 30
   return (
     <>
 

@@ -1,0 +1,34 @@
+#brochureMain{
+    min-width: 50vw;
+    min-height: 50vh;
+}
+.brochureimg{
+    width: 50vw;
+}
+.brochureimg img{
+    width: 30vw;
+}
+#downloadbutton{
+    width: fit-content;
+    padding-right: 15px;
+}
+@media (max-width:600px) {
+    #brochureMain{
+        flex-direction: column;
+        /* align-items: start; */
+        justify-content: start;
+        /* width: ; */
+    min-height: fit-content;
+    }
+    .brochureimg{
+        width: 100vw;
+    }
+    .brochureimg img{
+        width: 100vw;
+        padding-top: 10px;
+    }
+    #downloadbutton{
+        width: fit-content;
+        /* padding-right: 0px; */
+    }
+}

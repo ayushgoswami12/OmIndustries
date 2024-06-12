@@ -47,7 +47,11 @@ return(
 function Services() {
   return (
     <>
-<div className="mainService">
+<motion.div
+whileHover={{ backgroundColor: '#9aa9b9e5' , backgroundPosition: 'right bottom' }}
+
+transition={{ duration: 0.5, ease: 'easeInOut' }}
+ className="mainService">
 
     <div className="ServicePageHeading">
       <h1>Our Products </h1>
@@ -276,7 +280,7 @@ function Services() {
   
    
     </div>
-</div>
+</motion.div>
     </>
   )
 }

@@ -1,4 +1,4 @@
-
+import ContactPic from "./Contact.png"
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./Contact.css";
@@ -31,20 +31,26 @@ export const Contact = () => {
   return (
     <>
 <Header></Header>
-  <div className="form">
+<div className="flex justify-around">
+
+  <div className="form flex items-center border-2 h-[fit-content] mt-24 p-14">
 
     <form ref={form} onSubmit={sendEmail}>
       <label >Name</label>
-      <input type="text" name="user_name" />
+      <input className="p-2" type="text" name="user_name" />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input className="p-2" type="email" name="user_email" />
       <label>Message</label>
-      <textarea  name="message" />
+      <textarea className="p-2"  name="message" />
       <br></br>
-      <input onClick={Handling} id="final" type="submit" value="Send" />
+      <input  onClick={Handling} id="final" type="submit" value="Send" />
       
     </form>
   </div>
+  <div id="contactIMG">
+    <img  src={ContactPic}></img>
+  </div>
+</div>
     </>
   );
 };

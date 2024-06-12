@@ -9,7 +9,8 @@
 }
 .fpage{
     width: 98vw;
-    height: 100vh;
+    min-height: 100vh;
+    /* max-height: 100vh; */
 }
 #imagediv{
     width: 50vw;
