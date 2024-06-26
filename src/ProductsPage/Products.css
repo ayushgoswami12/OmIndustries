@@ -5,8 +5,8 @@
     /* margin-bottom: 5px; */
     margin: 15px;
     mix-blend-mode: multiply;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    /* border-right: 1px solid black;
+    border-bottom: 1px solid black; */
 }
 .Divisons{
     display: flex;

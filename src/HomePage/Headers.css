@@ -41,6 +41,8 @@ object-fit: cover;
 }
 ul li {
     text-decoration: none;
+    /* text-decoration: u; */
+    text-transform: uppercase;
 }
 .header{
     display: flex;
@@ -53,7 +55,8 @@ ul li {
 }
 .intro ul li:hover{
     cursor: pointer;
-   color: rgb(210, 177, 13);
+    text-decoration: underline;
+   color: rgb(252, 95, 4);
 }
 .intro ul{
     gap: 15px;
@@ -88,7 +91,16 @@ ul li {
 
 }
 
-
+@media (max-width: 600px) {
+    .ul {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .ul li {
+      margin: 5px 0;
+    }
+  }
 
 
 

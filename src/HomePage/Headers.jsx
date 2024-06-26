@@ -29,24 +29,24 @@ function Header() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          transition={{ duration: 1.5, delay: 0.1 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="intro flex-wrap"
-        >
-          <ul className='ul'>
-            <li> <Link to={"/"}>Home</Link> </li>
-            <li>   <Link to={"/Brochure"}>Brochure</Link>  </li>
-            <li> <Link to={"/Contact"}>Contact us</Link>  </li>
-            {/* <li>Hello</li> */}
-          </ul>
-        </motion.div>
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5, delay: 0.1 }}
+      className="intro flex-wrap"
+    >
+      <ul className="ul">
+        <li><Link to={"/"}>Home</Link></li>
+        <li><Link to={"/Brochure"}>Brochure</Link></li>
+        <li><Link to={"/Contact"}>Contact us</Link></li>
+        {/* <li>Hello</li> */}
+      </ul>
+    </motion.div>
       </div>
       <motion.div
-       initial={{ opacity: 0, x: -10 }}
-          transition={{ duration: 1.5, delay: 0.1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-       className='contactIcons py-2'>
+        initial={{ opacity: 0, x: -10 }}
+        transition={{ duration: 1.5, delay: 0.1 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        className='contactIcons py-2'>
         <div className="mail">
           <img id="svgs" src={Mail}></img>
           <p className="font-bold">omindustries3639@gmail.com</p>
