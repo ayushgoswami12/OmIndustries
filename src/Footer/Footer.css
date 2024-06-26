@@ -3,3 +3,14 @@
     padding-left: 25px;
     /* padding: 50px; */
 }
+@media (max-width:600px) {
+   footer{
+    display: flex;
+    flex-direction: column;
+   }
+   #division{
+    width: 100vw;
+    padding-left: 0px;
+    /* padding: 50px; */
+}
+}

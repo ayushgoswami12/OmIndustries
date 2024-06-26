@@ -1,5 +1,5 @@
 import "./Services.css"
-// import gsap from "gsap";
+import gsap from "gsap";
 import { motion } from 'framer-motion';
 import Product1 from "../assets/product1.jpg"
 import Product2 from "../assets/product2.jpg"
@@ -16,7 +16,7 @@ import Product14 from "../assets/Product14.jpg"
 import Product15 from "../assets/Product15.jpg"
 import Product16 from "../assets/Product16.jpg"
 import { Link } from "react-router-dom";
-// import { useGSAP } from "@gsap/react";
+import { useGSAP } from "@gsap/react";
 
 
 
@@ -33,7 +33,17 @@ import { Link } from "react-router-dom";
 
 
 function ServicesProp (propshere){
-
+   useGSAP(()=>{
+      gsap.to(".ServicePageHeading",{
+         x:100,
+         scrollTrigger:{
+            trigger : ".ServicePageHeading",
+           start:"bottom",
+          end:"top 20%" , 
+          scrub: true , 
+         }
+      })
+   })
 
 
 
