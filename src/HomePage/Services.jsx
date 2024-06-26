@@ -1,6 +1,6 @@
 import "./Services.css"
-import gsap from "gsap";
-import { motion } from 'framer-motion';
+
+
 import Product1 from "../assets/product1.jpg"
 import Product2 from "../assets/product2.jpg"
 import Product3 from "../assets/product3.jpg"
@@ -16,7 +16,7 @@ import Product14 from "../assets/Product14.jpg"
 import Product15 from "../assets/Product15.jpg"
 import Product16 from "../assets/Product16.jpg"
 import { Link } from "react-router-dom";
-import { useGSAP } from "@gsap/react";
+
 
 
 
@@ -33,17 +33,7 @@ import { useGSAP } from "@gsap/react";
 
 
 function ServicesProp (propshere){
-   useGSAP(()=>{
-      gsap.to(".ServicePageHeading",{
-         x:100,
-         scrollTrigger:{
-            trigger : ".ServicePageHeading",
-           start:"bottom",
-          end:"top 20%" , 
-          scrub: true , 
-         }
-      })
-   })
+  
 
 
 
@@ -63,10 +53,8 @@ function Services() {
    
   return (
     <>
-<motion.div
-whileHover={{ backgroundColor: '#9aa9b9e5' , backgroundPosition: 'right bottom' }}
+<div
 
-transition={{ duration: 0.5, ease: 'easeInOut' }}
  className="mainService">
 
     <div className="ServicePageHeading">
@@ -80,10 +68,8 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     
 
    
-    <motion.div 
-      initial={{ opacity: 0, x: -10 }}
-        transition={{ duration: 1.5, delay: 0.1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+    <div 
+      
     className="ServiceDetail border-2">
     <ServicesProp 
 
@@ -95,14 +81,12 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     // description = "This is me here"
     button = "Click"
     />
-    </motion.div>
+    </div>
 
 
 
-    <motion.div
-     initial={{ opacity: 0, y: -10 }}
-        transition={{ duration: 1.5, delay: 0.1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+    <div
+     
      className="ServiceDetail border-2 ">
 
 
@@ -112,14 +96,12 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     id="Piston"
     // description = "This is me here "
     />
-    </motion.div>
+    </div>
    
 
 
-    <motion.div
-    initial={{ opacity: 0, y: -10 }}
-    transition={{ duration: 1.5, delay: 0.1 }}
-    whileInView={{ opacity: 1, x: 0 }}
+    <div
+    
     className="ServiceDetail border-2">
     <ServicesProp 
         img={Product14}
@@ -127,12 +109,10 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
         id="Nozzle-Socket" // Replacing spaces with hyphens
         // description="This is me here"
     />
-</motion.div>
+</div>
 
-    <motion.div
-     initial={{ opacity: 0, y: -10 }}
-        transition={{ duration: 1.5, delay: 0.1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+    <div
+     
      className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product16}
@@ -140,14 +120,12 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     id="Nozzle"
     // description = "This is me here "
     />
-    </motion.div>
+    </div>
 
 
 
 
-    <motion.div initial={{ opacity: 0,  }}
-        transition={{ duration: 1.5, delay: 0.1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+    <div 
          className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product2}
@@ -155,7 +133,7 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     id = "Ring"
     // description = "This is me here "
     />
-    </motion.div>
+    </div>
 
 
 
@@ -165,10 +143,8 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
 
 
 
-    <motion.div
-     initial={{ opacity: 0, y: -10 }}
-        transition={{ duration: 1.5, delay: 0.1 }}
-        whileInView={{ opacity: 1, y: 0 }}
+    <div
+    
      className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product3}
@@ -176,7 +152,7 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     id = "CClamp  " 
     // description = "  Unlimited creativity: Generative AI is a great brainstorming tool. You can try new ideas and concepts faster than ever, so you can explore your wildest ideas "
     />
-    </motion.div>
+    </div>
 
 
 
@@ -184,10 +160,8 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
 
 
 
-    <motion.div
-     initial={{ opacity: 0, x: -10 }}
-        transition={{ duration: 1.5, delay: 0.1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+    <div
+    
      className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product4}
@@ -195,7 +169,7 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     id = "Clamp " 
     // description = "imply press "
     />
-    </motion.div>
+    </div>
 
 
 
@@ -204,10 +178,8 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
 
 
     
-    <motion.div
-     initial={{ opacity: 0, }}
-        transition={{ duration: 1.5, delay: 0.1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+    <div
+    
      className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product5}
@@ -215,7 +187,7 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     id="Heater Sensor "
     // description = "This is me here "
     />
-    </motion.div>
+    </div>
 
 
 
@@ -225,10 +197,8 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
 
 
 
-    <motion.div
-     initial={{ opacity: 0, y: -10 }}
-        transition={{ duration: 1.5, delay: 0.1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+    <div
+    
      className="ServiceDetail border-2">
 
 
@@ -238,12 +208,10 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     id = " Rotlo Heater  " 
     // description = "This is me here "
     />
-    </motion.div>
+    </div>
     
-    <motion.div
-     initial={{ opacity: 0, y: -10 }}
-        transition={{ duration: 1.5, delay: 0.1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+    <div
+     
      className="ServiceDetail border-2">
 
 
@@ -253,13 +221,11 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     id = " Center Pin  " 
     // description = "This is me here "
     />
-    </motion.div>
+    </div>
 
 
-    <motion.div
-     initial={{ opacity: 0, y: -10 }}
-        transition={{ duration: 1.5, delay: 0.1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+    <div
+
      className="ServiceDetail border-2">
 
 
@@ -269,15 +235,13 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     id = " Pin  " 
     // description = "This is me here "
     />
-    </motion.div>
+    </div>
 
 
 
 
-    <motion.div
-     initial={{ opacity: 0, y: -10 }}
-        transition={{ duration: 1.5, delay: 0.1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+    <div
+     
      className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product8}
@@ -285,14 +249,12 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     id = " Heater  " 
     // description = "This is me here "
     />
-    </motion.div>
+    </div>
 
 
 
-    <motion.div
-     initial={{ opacity: 0, y: -10 }}
-        transition={{ duration: 1.5, delay: 0.1 }}
-        whileInView={{ opacity: 1, x: 0 }}
+    <div
+     
      className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product13}
@@ -300,14 +262,14 @@ transition={{ duration: 0.5, ease: 'easeInOut' }}
     id = " Studs  " 
     // description = "This is me here "
     />
-    </motion.div>
+    </div>
 
 
     
   
    
     </div>
-</motion.div>
+</div>
     </>
   )
 }
