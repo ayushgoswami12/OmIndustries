@@ -1,6 +1,6 @@
-import { useGSAP } from "@gsap/react";
+
 import Tool from "../assets/Icons1/heropreview.png"
-import gsap from "gsap"
+
 import "./Hero.css"
 import { motion } from 'framer-motion';
 
@@ -8,16 +8,7 @@ import { motion } from 'framer-motion';
 
 
 function Hero() {
-useGSAP(()=>{
-  gsap.to(".heros",{
-    x:10,
-    repeat:-1 , 
-    yoyo:true , 
-    duration:0.5,
-    // whileInView
-    // ease : "bounce",
-  })
-},[])
+
 
 
   return (
