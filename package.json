@@ -14,6 +14,10 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@fontsource/archivo-narrow": "^5.0.20",
+    "@fontsource/chivo": "^5.0.13",
+    "@fontsource/raleway": "^5.0.19",
+    "@fontsource/roboto-condensed": "^5.0.16",
     "@gsap/react": "^2.1.1",
     "framer-motion": "^11.2.10",
     "gh-pages": "^6.1.1",

@@ -31,9 +31,9 @@ export const Contact = () => {
   return (
     <>
 <Header></Header>
-<div className="flex justify-around">
+<div id="maincontactdiv" className="flex justify-around">
 
-  <div className="form flex items-center border-2 h-[fit-content] mt-24 p-14">
+  <div id="formfilling" className="form flex items-center border-2 h-[fit-content] mt-24 p-14">
 
     <form ref={form} onSubmit={sendEmail}>
       <label >Name</label>

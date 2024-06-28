@@ -38,3 +38,23 @@ form{
  #contactIMG img{
    mix-blend-mode: multiply;
  }
+ @media (max-width:600px) {
+   #maincontactdiv{
+      display: flex;
+      
+      flex-direction: column  ;
+      align-items: center;
+      
+
+   }
+  
+   #formfilling{
+      width: 50vw;
+      padding-top: 140;
+      margin-top: 0;
+      border: none;
+   }
+   #contactIMG{
+      width: 50vw;
+   }
+ }
