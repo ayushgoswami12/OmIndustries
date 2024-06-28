@@ -12,8 +12,7 @@ form{
  }
  input{
     background-color: rgb(13, 179, 225);
- 
- 
+
     padding-top: 5px;
     width: 30vw;
     margin: 5px;
@@ -47,9 +46,14 @@ form{
       
 
    }
-  
+   input{
+      width: 60vw;
+   }
+   textarea{
+      width: 60vw;
+   }
    #formfilling{
-      width: 50vw;
+      /* width: 50vw; */
       padding-top: 140;
       margin-top: 0;
       border: none;

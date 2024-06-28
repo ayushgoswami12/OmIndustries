@@ -2,3 +2,21 @@
 .productImg{
     width: 50vw;
 }
+@media (max-width:600px) {
+    .productImg{
+        width: 90vw;
+    }
+    .Divisons{
+        display: flex;
+        flex-direction: column;
+    }
+    .ProductDetails{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+   .ProductDetails  h1{
+    padding-top: 0px;
+   }
+}

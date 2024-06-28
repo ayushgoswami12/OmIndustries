@@ -23,7 +23,7 @@ function Piston() {
                             <img src={Product1}></img>
                         </div>
 
-                        <div>
+                        <div className="ProductDetails">
                             <h1 className="text-5xl pt-20   font-bold text-yellow-600">Piston</h1>
                             <p className="text-xl pt-7">Material :- Hot Die</p>
                             <p className="text-xl pt-2">All sizes are in MM</p>
