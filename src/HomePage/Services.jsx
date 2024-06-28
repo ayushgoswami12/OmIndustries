@@ -6,6 +6,12 @@ import Product2 from "../assets/product2.jpg"
 import Product3 from "../assets/product3.jpg"
 import Product4 from "../assets/product4.jpg"
 import Product5 from "../assets/product5.jpg"
+import Product18 from "../assets/product18.jpg"
+import Product19 from "../assets/product19.jpg"
+import Product20 from "../assets/product20.jpg"
+import Product21 from "../assets/product21.jpg"
+import Hook from "../assets/Hook.jpg"
+
 import Product11 from "../assets/Prodcut11.jpg"
 // import Product7 from "../assets/product7.jpg"
 import Product8 from "../assets/product8.jpg"
@@ -92,7 +98,7 @@ function Services() {
 
     <ServicesProp 
     img =  {Product1}
-    heading = "Piston" 
+    heading = "Plunger Piston with Ring " 
     id="Piston"
     // description = "This is me here "
     />
@@ -116,7 +122,7 @@ function Services() {
      className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product16}
-    heading = " Nozzle " 
+    heading = " Nozzle Tip With Thread  " 
     id="Nozzle"
     // description = "This is me here "
     />
@@ -148,7 +154,7 @@ function Services() {
      className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product3}
-    heading = "C Clamp  " 
+    heading = "C Shaped Clamp  " 
     id = "CClamp  " 
     // description = "  Unlimited creativity: Generative AI is a great brainstorming tool. You can try new ideas and concepts faster than ever, so you can explore your wildest ideas "
     />
@@ -183,8 +189,8 @@ function Services() {
      className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product5}
-    heading="Heater Sensor "
-    id="Heater Sensor "
+    heading="ThermoCouple   "
+    id="ThermoCouple "
     // description = "This is me here "
     />
     </div>
@@ -204,8 +210,8 @@ function Services() {
 
     <ServicesProp 
     img =  {Product11}
-    heading = " Rotlo Heater  " 
-    id = " Rotlo Heater  " 
+    heading = " Gooseneck Heater   " 
+    id = " Gooseneck Heater  " 
     // description = "This is me here "
     />
     </div>
@@ -231,8 +237,8 @@ function Services() {
 
     <ServicesProp 
     img =  {Product10}
-    heading = " Pin  " 
-    id = " Pin  " 
+    heading = " Ejector Pin  " 
+    id = " Ejector Pin  " 
     // description = "This is me here "
     />
     </div>
@@ -245,8 +251,8 @@ function Services() {
      className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product8}
-    heading = " Heater  " 
-    id = " Heater  " 
+    heading = " Nozzle Heater  " 
+    id = " Nozzle Heater  " 
     // description = "This is me here "
     />
     </div>
@@ -254,12 +260,62 @@ function Services() {
 
 
     <div
-     
      className="ServiceDetail border-2">
     <ServicesProp 
     img =  {Product13}
     heading = " Studs  " 
     id = " Studs  " 
+    // description = "This is me here "
+    />
+    </div>
+
+
+
+
+    
+    <div
+     className="ServiceDetail border-2">
+    <ServicesProp 
+    img =  {Product18}
+    heading = " Flat Clamp  " 
+    id = " Flat Clamp  " 
+    // description = "This is me here "
+    />
+    </div>
+
+    <div
+     className="ServiceDetail border-2">
+    <ServicesProp 
+    img =  {Product19}
+    heading = " Automatic spray gun   " 
+    id = " Automatic spray gun  " 
+    // description = "This is me here "
+    />
+    </div>
+    <div
+     className="ServiceDetail border-2">
+    <ServicesProp 
+    img =  {Product20}
+    heading = " Nipple   " 
+    id = " Nipple  " 
+    // description = "This is me here "
+    />
+    </div>
+    <div
+     className="ServiceDetail border-2">
+    <ServicesProp 
+    img =  {Product21}
+    heading = " Pencil Heater   " 
+    id = " Studs  " 
+    // description = "This is me here "
+    />
+    </div>
+    <div
+     className="ServiceDetail border-2">
+    <ServicesProp 
+    img =  {Hook}
+    heading = " Hook  " 
+    id = " Hook  " 
     // description = "This is me here "
     />
     </div>
