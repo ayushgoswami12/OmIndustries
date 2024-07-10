@@ -89,29 +89,48 @@ text-align: center;
     display: flex;
   
     }
+.ServicePageHeading img{
+    width: 100%;
+    height: 100%;
+  
+    }
 
 .ServicePageHeading h2{
     font-size: 15px;
 }
-
+#product_img{
+    width: 50vw;
+    aspect-ratio: unset;
+}
 .ServiceDetail{
     display: flex;
     flex-wrap: wrap;
-    
+    height: 38vh;
     width:40vw;
 }
 .ServiceDetail img{
    height:30vh;
-   width: fit-content;
+   /* width: 60vw; */
 }
 .propteries{
     width: 35vw;
 }
 .propteries1{
     width: 35vw;
+    border: 2px solid black;
     text-wrap: wrap;
 }
-
-
-
+#headingprops{
+    font-size: small;
+}
+.newestimg img{
+width: 200px;
+height: auto;
+}
+#verticl img{
+    object-fit: cover;
+} 
+.other2 img{
+   object-fit: cover;
+}
     }

@@ -13,18 +13,15 @@ function Noozle() {
 
 
 
-          <div className="Divisons">
-            <div className="productImg">
 
-              <img src={Product16}></img>
-            </div>
-            <div>
-              <h1 className="text-4xl pt-20">Gooseneck</h1>
-              <p>Dimensions = 32 X 32</p>
-            </div>
+          <div className="productImg">
+
+            <img src={Product16}></img>
           </div>
+        
         </div>
-      </>
+     
+    </>
     </>
   )
 }

@@ -15,3 +15,26 @@
     /* align-items: center; */
 
 }
+.productImg1{
+    width: 35vw;
+    /* display: flex; */
+    padding: 15px;
+    /* margin-bottom: 5px; */
+    margin: 15px;
+    mix-blend-mode: multiply;
+    /* border-right: 1px solid black;
+    border-bottom: 1px solid black; */
+}
+
+.Divisons1{
+    display: flex;
+    /* justify-content: center; */
+   gap: 60px;
+    /* align-items: center; */
+
+}
+@media (max-width:600px) {
+    #gooseneck{
+        padding-top: 0;
+    }
+}
