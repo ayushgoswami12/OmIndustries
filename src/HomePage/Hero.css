@@ -8,6 +8,55 @@
     align-items: center;
     font-size: bolder;
 }
+.emailus{
+    background: rgb(21,0,255);
+background: linear-gradient(90deg, rgba(21,0,255,1) 16%, rgba(255,0,0,1) 41%, rgba(31,255,0,1) 62%, rgba(255,183,0,1) 76%);
+}
+/* From Uiverse.io by vikiWayne */ 
+.button {
+    padding: 1em 2em;
+    border: none;
+    width: max-content;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: red;
+    
+    /* letter-spacing: 5px; */
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #f02f2f;
+  }
+  
+  .button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #f02f2f;
+    box-shadow: 4px 5px 17px -4px #268391;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #f02f2f;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .button:hover::before {
+    width: 250%;
+  }
+  
+  
 .fpage{
     width: 98vw;
     min-height: 100vh;
@@ -42,7 +91,9 @@ font-family: "Chivotal";
     font-size: large;
 }
 
-
+body{
+    overflow-x: hidden;
+}
 
 
 

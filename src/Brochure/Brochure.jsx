@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 
 import Book from "../assets/Icons1/tool.svg"
 import "./brochure.css"
+import CustomCursor from "../HomePage/CustomCursor";
 
 
 
@@ -15,6 +16,7 @@ import "./brochure.css"
 function Brochure() {
   return (
     <>
+    <CustomCursor></CustomCursor>
       <Header></Header>
       <div id="brochureMain" className=" flex ">
 
@@ -28,7 +30,7 @@ function Brochure() {
             <h1 className="text-4xl underline text-red-600 font-bold py-3 my-3 ">Our Brochure  </h1>
             <div id="downloadbutton" className=" py-3 my-3 flex flex-row items-center justify-center rounded-lg hover:cursor-pointer bg-yellow-400">
 
-              <a className="flex" target="blank" href="https://tailwindcss.com/docs/text-decoration">
+              <a className="flex" target="blank" href="https://drive.google.com/file/d/14ody9ceupvMxjyKFD3jRjcqZaJc7ytv-/view?usp=drive_link">
                 <img className="w-10" src={Downlaod}></img>
 
                 <h1 className="text-3xl ">Download Our Brochure</h1>

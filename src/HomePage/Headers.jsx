@@ -29,18 +29,19 @@ function Header() {
         </motion.div>
 
         <motion.div
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.5, delay: 0.1 }}
-      className="intro flex-wrap"
-    >
-      <ul className="ul">
-        <li><Link to={"/"}>Home</Link></li>
-        <li><Link to={"/Brochure"}>Brochure</Link></li>
-        <li><Link to={"/Contact"}>Contact us</Link></li>
-        {/* <li>Hello</li> */}
-      </ul>
-    </motion.div>
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5, delay: 0.1 }}
+          className="intro flex-wrap"
+        >
+          <ul className="gap-5">
+            <li><Link to={"/"}>Home</Link></li>
+            <li><Link to={"/Brochure"}>Brochure</Link></li>
+            <li><Link to={"/Products"}>Products</Link></li>
+            <li><Link to={"/Contact"}>Contact us</Link></li>
+            {/* <li>Hello</li> */}
+          </ul>
+        </motion.div>
       </div>
       <motion.div
         initial={{ opacity: 0, x: -10 }}

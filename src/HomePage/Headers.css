@@ -59,7 +59,7 @@ ul li {
    color: rgb(252, 95, 4);
 }
 .intro ul{
-    gap: 15px;
+    gap: 45px;
     display: flex ; 
     font-size: x-large;
     font-weight: bolder;

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.productHeading{
+    font-family: "Ubuntu", sans-serif;
+ 
+}
+body{
+    cursor: auto;
+}
+.custom-cursor {
+    position: absolute; /* Ensure it follows the cursor properly */
+    z-index: 1; /* Low z-index to ensure it stays behind most elements */
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    background-color: black; /* Cursor color */
+    border-radius: 50%; /* Rounded shape */
+    transform: translate(-50%, -50%); /* Center the cursor */
+    pointer-events: none; /* Ensure it doesn’t block other interactions */
+}
+
+.productHeading,
+.text-element,
+table {
+    position: relative; /* Or `absolute`, depending on your layout */
+    z-index: 10; /* Higher z-index to ensure they appear above the cursor */
+}
+
+

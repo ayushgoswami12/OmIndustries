@@ -3,6 +3,7 @@ import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./Contact.css";
 import Header from '../HomePage/Headers';
+import CustomCursor from "../HomePage/CustomCursor";
 
 
 export const Contact = () => {
@@ -31,6 +32,7 @@ export const Contact = () => {
   return (
     <>
 <Header></Header>
+<CustomCursor></CustomCursor>
 <div id="maincontactdiv" className="flex justify-around">
 
   <div id="formfilling" className="form flex items-center border-2 h-[fit-content] mt-24 p-14">

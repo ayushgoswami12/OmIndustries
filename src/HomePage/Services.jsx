@@ -24,6 +24,7 @@ import Product15 from "../assets/Product15.jpg"
 import Product16 from "../assets/Product16.jpg"
 import { Link } from "react-router-dom";
 import { useGSAP } from "@gsap/react"
+// import ContactNew from "../Contact/ContactNew"
 
 
 
