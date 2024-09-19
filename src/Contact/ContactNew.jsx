@@ -1,63 +1,62 @@
-import ContactPic from "./Contact.png"
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import ContactPic from "./Contact.png";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import { motion } from 'framer-motion';
 
 
-
-export const ContactNew = () => {
+export const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_hn461on', 'template_jr4ebve', form.current, {
-        publicKey: 'gHr0Z3kekVSB36fTe',
+      .sendForm("service_hn461on", "template_jr4ebve", form.current, {
+        publicKey: "gHr0Z3kekVSB36fTe",
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          console.log("SUCCESS!");
         },
         (error) => {
-          console.log('FAILED...', error.text);
-        },
+          console.log("FAILED...", error.text);
+        }
       );
   };
+
   function Handling() {
-    alert("Your message is sent succesfully")
+    alert("Your message is sent successfully");
   }
 
   return (
     <>
-      {/* <Header></Header> */}
-      <div className="p-5 m-5">
+      <div id="maincontactdiv" className="flex justify-around flex-row">
+        <motion.div
+         initial={{ opacity: 0, x: -25 }}
+          transition={{ duration: 1.5, delay: 0.1 }}
+          whileInView={{ opacity: 1, x: 0 }}
+         id="formfilling" className="form flex  flex-col items-center border-2 h-[fit-content] mt-24 p-14">
+          <div>
 
-
-        <h1 className="text-5xl font-bold text-center underline p-5 m-5">EMAIL US NOW </h1>
-        <div id="maincontactdiv" className="flex justify-around">
-
-          <div id="formfilling" className="form flex items-center border-2 h-[fit-content] mt-24 p-14">
-
+            <h1 className="font-bold "> <span className="text-blue-800">Contact <span className="">Now</span> </span>  </h1>
+          </div>
+          <div>
             <form ref={form} onSubmit={sendEmail}>
-              <label >Name</label>
-              <input className="p-2" type="text" name="user_name" />
-              <label>Email</label>
-              <input className="p-2" type="email" name="user_email" />
-              <label>Message</label>
-              <textarea className="p-2" name="message" />
-              <br></br>
+              <input className="p-2" type="text" name="user_name" placeholder="Name" />
+              <input className="p-2" type="email" name="user_email" placeholder="Email" />
+              <textarea className="p-2" name="message" placeholder="Message" />
+              <br />
               <input onClick={Handling} id="final" type="submit" value="Send" />
-
             </form>
           </div>
-          <div id="contactIMG">
-            <img src={ContactPic}></img>
-          </div>
+        </motion.div>
+        <div id="contactIMG">
+          <img src={ContactPic} alt="Contact" />
         </div>
       </div>
     </>
   );
 };
 
-export default ContactNew
+export default Contact;

@@ -1,11 +1,12 @@
 
 import Footer from '../Footer/Footer'
-import CustomCursor from './CustomCursor'
-import Header from './Headers'
-import Hero from './Hero'
+// import CustomCursor from './CustomCursor'
+// import Header from './Headers'
+// import Hero from './Hero'
 import OurProducts from './OurProducts'
 import Showcase from './Showcase'
-import ContactNew from "../Contact/ContactNew";
+  import ContactNew from "../Contact/ContactNew";
+import NewHero from './NewHero'
 
 // import Services from "./Services"
 
@@ -14,13 +15,14 @@ function Homepage() {
     <>
 
     <div className='fpage'>
-    <CustomCursor></CustomCursor>
-      <Header></Header>
-      <Hero></Hero>
+    {/* <CustomCursor></CustomCursor> */}
+      {/* <Header></Header> */}
+      <NewHero></NewHero>
+      {/* <Hero></Hero> */}
     </div>
       {/* <Services></Services> */}
-      <OurProducts></OurProducts>
       <Showcase></Showcase>
+      <OurProducts></OurProducts>
       <ContactNew />
       <Footer></Footer>
     </>

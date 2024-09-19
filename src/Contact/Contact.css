@@ -1,64 +1,198 @@
-form{
-    flex-direction: column;
-    display: flex;
-
-    /* margin: 50px; */
-    align-items: center;
-    /* justify-content:space-around; */
+/* Flex layout for form */
+form {
+   display: flex;
+   color: white;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px; /* Adds space between elements */
+   width: 100%;
  }
- label{
-    text-align: right;
-    /* margin: 5px; */
- }
- input{
-    background-color: rgb(13, 179, 225);
-
-    padding-top: 5px;
-    width: 30vw;
-    margin: 5px;
- }
- textarea{
-    color: rgb(44, 190, 201);
- background-color: rgb(225, 48, 13);
-   margin: 5px;
-   padding: 5px;
-    color: black;
-    width: 30vw;
- }
- #final{
- color: white;
- background-color: cadetblue;
  
+ /* Label alignment */
+ label {
+   font-size: 1rem;
+   font-weight: 500;
+   margin-bottom: 5px;
+   align-self: flex-start; /* Align labels to the left */
  }
- #final:hover{
- cursor: pointer;
- background-color: rgb(225, 211, 13);
+ /* Form container styles */
+#formfilling {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 2px solid #ccc;
+   padding: 20px;
+   border-radius: 8px;
+   width: 100%; /* Full width of the container */
+   max-width: 600px; /* Maximum width to keep form from stretching too wide */
+   background-color: #f9f9f9; /* Background color for form */
+   margin-bottom: 20px; /* Space below the form */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow for form container */
  }
- #contactIMG img{
+ 
+ /* Heading styles */
+ #formfilling h1 {
+   font-size: 2rem;
+   margin-bottom: 20px;
+   color: black; /* Color for heading text */
+ }
+ 
+ /* Input and textarea styles */
+ input, textarea {
+   background-color: black;
+   padding: 10px 15px;
+   width: 100%; /* Full width of the form */
+   border: none;
+   border-radius: 8px; /* Rounded corners */
+   color: rgb(247, 242, 242); /* Light text color for contrast */
+   font-size: 1rem;
+   outline: none;
+   font-weight: bold; /* Bold text */
+   transition: background-color 0.3s ease, transform 0.2s ease;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for input fields */
+ }
+ 
+ /* Input hover and focus effects */
+ input:hover, input:focus, textarea:hover, textarea:focus {
+   background-color: rgb(11, 57, 74); /* Darker shade on hover/focus */
+   transform: scale(1.02); /* Subtle scale effect */
+ }
+ 
+ /* Textarea specific styles */
+ textarea {
+   resize: vertical; /* Allow vertical resize */
+   min-height: 150px; /* Ensure a minimum height for textareas */
+ }
+ 
+ /* Submit button styles */
+ #final {
+   background-color: rgb(96, 95, 160);
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 8px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+   width: 100%; /* Full width of the form */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for button */
+ }
+ 
+ /* Button hover */
+ #final:hover {
+   background-color: rgb(27, 13, 225);
+   transform: scale(1.05); /* Makes the button pop */
+ }
+ 
+ /* Placeholder styles */
+ input::placeholder, 
+ textarea::placeholder {
+   color: rgb(244, 236, 236); /* Light placeholder text for contrast */
+   font-weight: bold;
+ }
+ 
+ /* Mobile-specific styles */
+ @media (max-width: 600px) {
+   input, textarea, #final {
+     width: 100%; /* Full width for mobile */
+   }
+ }
+ 
+ /* Input field styles */
+ input {
+   background-color: black;
+   padding: 10px 15px;
+   width: 30vw;
+   border: none;
+   border-radius: 8px; /* Rounded corners */
+   color: rgb(247, 242, 242); /* Light text color for contrast */
+   font-size: 1rem;
+   outline: none;
+   font-weight: bold; /* Bold text */
+   transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+ 
+ /* Input hover and focus effects */
+ input:hover, input:focus {
+   background-color: rgb(11, 57, 74); /* Darker shade on hover/focus */
+   transform: scale(1.02); /* Subtle scale effect */
+ }
+ 
+ /* Textarea styles */
+ textarea {
+   background-color: rgb(0, 0, 0);
+   color: rgb(247, 242, 242); /* Light text color for contrast */
+   padding: 10px;
+   width: 30vw;
+   border: none;
+   border-radius: 8px;
+   font-size: 1rem;
+   resize: vertical; /* Allow vertical resize */
+   outline: none;
+   font-weight: bold; /* Bold text */
+   transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+ 
+ /* Textarea hover and focus effects */
+ textarea:hover, textarea:focus {
+   background-color: rgb(8, 5, 53); /* Darker shade on hover/focus */
+   transform: scale(1.02); 
+ }
+ 
+ /* Submit button */
+ #final {
+   background-color: rgb(96, 95, 160);
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 8px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+ }
+ 
+ /* Button hover */
+ #final:hover {
+   background-color: rgb(27, 13, 225);
+   transform: scale(1.05); /* Makes the button pop */
+ }
+ 
+ /* Image styling */
+ #contactIMG img {
    mix-blend-mode: multiply;
+   border-radius: 10px; /* Rounded image corners */
+   width: 100%;
+   height: auto;
+   object-fit: cover;
  }
- @media (max-width:600px) {
-   #maincontactdiv{
-      display: flex;
-      
-      flex-direction: column  ;
-      align-items: center;
-      
-
+ 
+ /* Placeholder styles */
+ input::placeholder, 
+ textarea::placeholder {
+   color: rgb(244, 236, 236); /* Light placeholder text for contrast */
+   font-weight: bold;
+ }
+ 
+ /* Mobile-specific styles */
+ @media (max-width: 600px) {
+   #maincontactdiv {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
    }
-   input{
-      width: 60vw;
+   
+   input, textarea {
+     width: 60vw; /* Adjust width for mobile */
    }
-   textarea{
-      width: 60vw;
+ 
+   #formfilling {
+     margin-top: 0;
+     border: none;
+     padding-top: 10px; /* Reduce padding on smaller screens */
    }
-   #formfilling{
-      /* width: 50vw; */
-      padding-top: 140;
-      margin-top: 0;
-      border: none;
-   }
-   #contactIMG{
-      width: 50vw;
+ 
+   #contactIMG {
+     width: 80vw; /* Adjust image size for mobile */
    }
  }
+ 

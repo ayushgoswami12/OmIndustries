@@ -1,28 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-.productHeading{
+.productHeading {
     font-family: "Ubuntu", sans-serif;
- 
+
 }
-body{
+
+body {
     cursor: auto;
 }
+
 .custom-cursor {
-    position: absolute; /* Ensure it follows the cursor properly */
-    z-index: 1; /* Low z-index to ensure it stays behind most elements */
-    width: 24px; /* Adjust size as needed */
-    height: 24px; /* Adjust size as needed */
-    background-color: black; /* Cursor color */
-    border-radius: 50%; /* Rounded shape */
-    transform: translate(-50%, -50%); /* Center the cursor */
-    pointer-events: none; /* Ensure it doesn’t block other interactions */
+    position: absolute;
+    /* Ensure it follows the cursor properly */
+    z-index: 1;
+    /* Low z-index to ensure it stays behind most elements */
+    width: 24px;
+    /* Adjust size as needed */
+    height: 24px;
+    /* Adjust size as needed */
+    background-color: black;
+    /* Cursor color */
+    border-radius: 50%;
+    /* Rounded shape */
+    transform: translate(-50%, -50%);
+    /* Center the cursor */
+    pointer-events: none;
+    /* Ensure it doesn’t block other interactions */
 }
 
 .productHeading,
 .text-element,
 table {
-    position: relative; /* Or `absolute`, depending on your layout */
-    z-index: 10; /* Higher z-index to ensure they appear above the cursor */
+    position: relative;
+    /* Or `absolute`, depending on your layout */
+    z-index: 10;
+    /* Higher z-index to ensure they appear above the cursor */
 }
 
 
+
+@media (max-width: 768px) {
+    .product-img {
+        width: 80vw;
+        /* Increase width for smaller screens */
+        height: auto;
+        /* Ensure image scales properly */
+    }
+
+    .product-description {
+        font-size: 1rem;
+        /* Make the text smaller */
+        line-height: 1.2rem;
+        /* Adjust line-height for readability */
+    }
+
+    .product-table {
+        font-size: 0.9rem;
+        /* Reduce table text size */
+        padding: 0.5rem;
+        /* Adjust padding */
+    }
+
+    .product-table td {
+        padding: 0.5rem;
+    }
+}

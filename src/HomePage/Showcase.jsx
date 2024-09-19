@@ -1,11 +1,21 @@
 import "./Showcase.css";
 import Arrow from "../SVGS/Arrow.svg";
-import Image3 from "../SiteImages/Industrial-Photoshoot.jpg";
+// import Image3 from "../SiteImages/Industrial-Photoshoot.jpg";
+import CountUp from "react-countup";
+
+import { useInView } from "react-intersection-observer";
+import { motion } from 'framer-motion';
+
+
 
 function Showcase() {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger only once when the section comes into view
+    threshold: 0.5, // Trigger when 50% of the section is visible
+  });
   return (
     <>
-      <div className="buy m-5">
+      {/* <div className="buy m-5">
         <p>BUY GOOD</p>
         <p>BE GOOD</p>
       </div>
@@ -24,18 +34,25 @@ function Showcase() {
             src={Image3}
           />
         </div>
-      </div>
+      </div> */}
 
 
-      <div className="mt-20 md:mt-40 lg:mt-52 mx-5 md:mx-10 lg:mx-20">
+      <div className="mt-10 md:mt-40 lg:mt-52 mx-5 md:mx-10 lg:mx-20 px-4 sm:px-6 md:px-0">
         <div className="flex flex-col md:flex-row gap-16">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -10 }}
+            transition={{ duration: 1.5, delay: 0.1 }}
+            whileInView={{ opacity: 1, x: 0 }}
+          >
             <img
               className="w-[90vw] md:w-[40vw] rounded-md"
               src="https://images.pexels.com/photos/3846390/pexels-photo-3846390.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             />
-          </div>
-          <div className="w-[100%] md:w-[50vw] flex flex-col">
+          </motion.div>
+          <motion.div initial={{ opacity: 0, x: 10 }}
+            transition={{ duration: 1.5, delay: 0.1 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            className="w-[100%] md:w-[50vw] flex flex-col">
             <h1 className="text-xl font-bold pb-2 text-blue-500 tracking-widest">WELCOME TO</h1>
             <h1 className="text-3xl md:text-5xl font-bold pb-2 text-blue-500">
               Om <span className="text-black">Industries</span>
@@ -43,8 +60,8 @@ function Showcase() {
             <p className="text-gray-500 text-base md:text-xl font-bold pt-8">
               <span className="text-blue-500">Om</span>
               <span className="text-black"> Industries</span> is a metal casting
-              company manufacturing the best quality Metal Casting Products.
-              The massive range of products includes High Manganese{" "}
+              company manufacturing the best quality Metal Casting Products. The
+              massive range of products includes High Manganese{" "}
               <span className="text-blue-500">Steel Casting, S.G.I. Casting, C.I. Casting</span>,
               etc.
             </p>
@@ -76,9 +93,45 @@ function Showcase() {
                 </h1>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
+
+      <section ref={ref} className="bg-gray-900 py-8 mt-10 text-white mb-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
+
+          <div className="flex flex-col items-center space-y-2 md:space-y-4">
+            <div className="text-blue-300 text-4xl md:text-6xl font-bold">
+              {inView && <CountUp end={3000} duration={3} />}+
+            </div>
+            <p className="text-sm md:text-lg font-medium">Projects Completed</p>
+          </div>
+
+          <div className="flex flex-col items-center space-y-2 md:space-y-4">
+            <div className="text-blue-300 text-4xl md:text-6xl font-bold">
+              {inView && <CountUp end={50} duration={3} />}+
+            </div>
+            <p className="text-sm md:text-lg font-medium">Expert Workers</p>
+          </div>
+
+          <div className="flex flex-col items-center space-y-2 md:space-y-4">
+            <div className="text-blue-300 text-4xl md:text-6xl font-bold">
+              {inView && <CountUp end={20} duration={3} />}+
+            </div>
+            <p className="text-sm md:text-lg font-medium">Years of Experience</p>
+          </div>
+
+          <div className="flex flex-col items-center space-y-2 md:space-y-4">
+            <div className="text-blue-300 text-4xl md:text-6xl font-bold">
+              {inView && <CountUp end={60000} duration={3} />}+
+            </div>
+            <p className="text-sm md:text-lg font-medium">Happy Clients</p>
+          </div>
+
+        </div>
+      </section>
+
+
     </>
   );
 }

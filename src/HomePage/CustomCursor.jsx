@@ -6,7 +6,23 @@ function CustomCursor() {
         const cursor = document.querySelector(".custom-cursor");
         let mouseX = 0, mouseY = 0;
         let cursorX = 0, cursorY = 0;
-
+        function updateCursor(e) {
+          if (window.innerWidth > 768) {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+          }
+        }
+        
+        document.addEventListener('mousemove', updateCursor);
+        
+        // Optionally, listen for window resizing to disable/enable cursor dynamically
+        window.addEventListener('resize', () => {
+          if (window.innerWidth <= 768) {
+            cursor.style.display = 'none';
+          } else {
+            cursor.style.display = 'block';
+          }
+        });
         const moveCursor = (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;

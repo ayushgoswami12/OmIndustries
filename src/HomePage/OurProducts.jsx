@@ -56,10 +56,10 @@ function OurProducts() {
 
                 {/* Product Sections */}
                 <motion.div
-                 initial={{ opacity: 0, x: -10 }}
-          transition={{ duration: 1.5, delay: 0.1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-                 className="p-2 m-2 mx-5 border-2 border-neutral-700">
+                    initial={{ opacity: 0, x: -10 }}
+                    transition={{ duration: 1.5, delay: 0.1 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    className="p-2 m-2 mx-5 border-2 border-neutral-700">
                     <h3 className="text-center text-4xl font-bold bg-gray-900 text-white">Piston</h3>
                     <motion.div
                         initial={{ opacity: 0, x: -10 }}
@@ -202,7 +202,7 @@ function OurProducts() {
                 </button>
             </div>
 
-            
+
             <WhatsappIntegrate />
         </>
     );

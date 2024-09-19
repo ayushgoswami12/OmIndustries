@@ -33,26 +33,26 @@ export const Contact = () => {
     <>
 <Header></Header>
 <CustomCursor></CustomCursor>
-<div id="maincontactdiv" className="flex justify-around">
+<div id="maincontactdiv" className="flex justify-around flex-row">
+        <div id="formfilling" className="form flex  flex-col items-center border-2 h-[fit-content] mt-24 p-14">
+          <div>
 
-  <div id="formfilling" className="form flex items-center border-2 h-[fit-content] mt-24 p-14">
-
-    <form ref={form} onSubmit={sendEmail}>
-      <label >Name</label>
-      <input className="p-2" type="text" name="user_name" />
-      <label>Email</label>
-      <input className="p-2" type="email" name="user_email" />
-      <label>Message</label>
-      <textarea className="p-2"  name="message" />
-      <br></br>
-      <input  onClick={Handling} id="final" type="submit" value="Send" />
-      
-    </form>
-  </div>
-  <div id="contactIMG">
-    <img  src={ContactPic}></img>
-  </div>
-</div>
+            <h1>Contact Now  </h1>
+          </div>
+          <div>
+            <form ref={form} onSubmit={sendEmail}>
+              <input className="p-2" type="text" name="user_name" placeholder="Name" />
+              <input className="p-2" type="email" name="user_email" placeholder="Email" />
+              <textarea className="p-2" name="message" placeholder="Message" />
+              <br />
+              <input onClick={Handling} id="final" type="submit" value="Send" />
+            </form>
+          </div>
+        </div>
+        <div id="contactIMG">
+          <img src={ContactPic} alt="Contact" />
+        </div>
+      </div>
     </>
   );
 };

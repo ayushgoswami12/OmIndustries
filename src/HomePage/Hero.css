@@ -73,14 +73,27 @@ background: linear-gradient(90deg, rgba(21,0,255,1) 16%, rgba(255,0,0,1) 41%, rg
     
     width: 30vw;
 }
-#division_para{
-    /* width: 50vw; */
+#division_para {
     font-family: "Chivotal";
-    /* font-size: 50px; */
-    /* width: 25vw; */
-
-  
+    margin-left: 0; /* remove any unwanted margins */
 }
+
+/* For screens smaller than 640px */
+@media (max-width: 640px) {
+    #division_para {
+        font-size: 40px;
+        margin-left: 5px; /* Add small spacing */
+    }
+}
+
+/* For screens between 600px and 1140px */
+@media only screen and (min-width: 600px) and (max-width: 1140px) {
+    #division_para {
+        font-size: 50px;
+        margin-left: 10px; /* Adjust spacing for medium screens */
+    }
+}
+
 #division_para2{
 font-family: "Chivotal";
 }
@@ -91,9 +104,7 @@ font-family: "Chivotal";
     font-size: large;
 }
 
-body{
-    overflow-x: hidden;
-}
+
 
 
 
