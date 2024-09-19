@@ -21,7 +21,7 @@ function NewHero() {
           SPARE PARTS OF
         </h1>
         <h2 className="uppercase font-black text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight">
-          <span className="text-blue-400">DIE <span className="text-yellow-500">CASTING MACHINE</span></span>.
+          <span className="text-blue-400">DIE <span className="text-yellow-500">CASTING MACHINE</span></span> .
         </h2>
         <p className="text-lg md:text-xl lg:text-2xl text-white font-bold mt-4">
           WELCOME TO OM INDUSTRIES WEBSITE
@@ -44,18 +44,35 @@ function NewHero() {
 
         {/* Navigation Links */}
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5, delay: 0.1 }}
-          className="intro flex justify-center px-4 py-2 text-white"
-        >
-          <ul className="flex gap-4 md:gap-8">
-            <li><Link to="/" className="hover:underline">Home</Link></li>
-            <li><Link to="/Brochure" className="hover:underline">Brochure</Link></li>
-            <li><Link to="/Products" className="hover:underline">Products</Link></li>
-            <li><Link to="/Contact" className="hover:underline">Contact Us</Link></li>
-          </ul>
-        </motion.div>
+  initial={{ opacity: 0, y: -50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.5, delay: 0.1 }}
+  className="intro flex justify-center px-4 py-2 text-white"
+>
+  <ul className="flex gap-4 md:gap-7 justify-center">
+    <li className="text-base md:text-xl transition-transform duration-300 hover:scale-105">
+      <Link to="/" className="hover:underline transition-colors duration-300 hover:text-blue-400">
+        Home
+      </Link>
+    </li>
+    <li className="text-base md:text-xl transition-transform duration-300 hover:scale-105">
+      <Link to="/Brochure" className="hover:underline transition-colors duration-300 hover:text-blue-400">
+        Brochure
+      </Link>
+    </li>
+    <li className="text-base md:text-xl transition-transform duration-300 hover:scale-105">
+      <Link to="/Products" className="hover:underline transition-colors duration-300 hover:text-blue-400">
+        Products
+      </Link>
+    </li>
+    <li className="text-base md:text-xl transition-transform duration-300 hover:scale-105">
+      <Link to="/Contact" className="hover:underline transition-colors duration-300 hover:text-blue-400">
+        Contact Us
+      </Link>
+    </li>
+  </ul>
+</motion.div>
+
       </div>
     </div>
   );

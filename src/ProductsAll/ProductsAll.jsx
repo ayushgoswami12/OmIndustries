@@ -3,13 +3,13 @@ import NozleTip from "../assets/nozzletip.png";
 import NozzleHeater1 from "../assets/NozzleHeater1.png";
 import NozzleHeater2 from "../assets/NozzleHeater2.png";
 import Header from "../HomePage/Headers";
-import CustomCursor from "../HomePage/CustomCursor";
+// import CustomCursor from "../HomePage/CustomCursor";
 import { motion } from 'framer-motion';
 
 function ProductsAll() {
     return (
         <>
-        <CustomCursor></CustomCursor>
+        {/* <CustomCursor></CustomCursor> */}
         <Header></Header>
         <div>
                 <motion.h1

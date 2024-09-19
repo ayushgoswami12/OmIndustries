@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 import Book from "../assets/Icons1/tool.svg"
 import "./brochure.css"
-import CustomCursor from "../HomePage/CustomCursor";
+// import CustomCursor from "../HomePage/CustomCursor";
 
 
 
@@ -16,7 +16,7 @@ import CustomCursor from "../HomePage/CustomCursor";
 function Brochure() {
   return (
     <>
-    <CustomCursor></CustomCursor>
+    {/* <CustomCursor></CustomCursor> */}
       <Header></Header>
       <div id="brochureMain" className=" flex ">
 

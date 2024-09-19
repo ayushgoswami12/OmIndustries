@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import PlugPiston from "../assets/straightpic/plungerpiston.png";
 import NozleTip from "../assets/nozzletip.png";
 import NozzleHeater1 from "../assets/NozzleHeater1.png";
@@ -11,34 +11,7 @@ import { motion } from 'framer-motion';
 import WhatsappIntegrate from "./WhatsappIntegrate";
 
 function OurProducts() {
-    useEffect(() => {
-        const cursor = document.querySelector(".custom-cursor");
-        let mouseX = 0, mouseY = 0;
-        let cursorX = 0, cursorY = 0;
-
-        const moveCursor = (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-
-            cursor.style.left = `${mouseX}px`;
-            cursor.style.top = `${mouseY}px`;
-        };
-
-        const animateCursor = () => {
-            cursorX += (mouseX - cursorX) * 0.1;
-            cursorY += (mouseY - cursorY) * 0.1;
-            cursor.style.left = `${cursorX}px`;
-            cursor.style.top = `${cursorY}px`;
-            requestAnimationFrame(animateCursor);
-        };
-
-        window.addEventListener("mousemove", moveCursor);
-        animateCursor();
-
-        return () => {
-            window.removeEventListener("mousemove", moveCursor);
-        };
-    }, []);
+   
 
     return (
         <>
