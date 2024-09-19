@@ -21,7 +21,7 @@ function NewHero() {
           SPARE PARTS OF
         </h1>
         <h2 className="uppercase font-black text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight">
-          <span className="text-blue-400">DIE <span className="text-yellow-500">CASTING MACHINE <span className="text-yellow-500"> .</span></span></span> 
+          <span className="text-blue-400">DIE <span className="text-yellow-500">CASTING MACHINE.</span></span> 
         </h2>
         <p className="text-lg md:text-xl lg:text-2xl text-white font-bold mt-4">
           WELCOME TO OM INDUSTRIES WEBSITE
