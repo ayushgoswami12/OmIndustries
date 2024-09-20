@@ -14,17 +14,20 @@ function Homepage() {
   return (
     <>
 
-    <div className='fpage'>
+    <div className='fpage  bg-yellow-400'>
     {/* <CustomCursor></CustomCursor> */}
       {/* <Header></Header> */}
       <NewHero></NewHero>
       {/* <Hero></Hero> */}
-    </div>
       {/* <Services></Services> */}
+      <div> 
+
       <Showcase></Showcase>
       <OurProducts></OurProducts>
       <ContactNew />
       <Footer></Footer>
+      </div>
+    </div>
     </>
   )
 }

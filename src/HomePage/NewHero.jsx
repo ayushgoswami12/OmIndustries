@@ -24,7 +24,7 @@ function NewHero() {
           <span className="text-blue-400">DIE <span className="text-yellow-500">CASTING MACHINE.</span></span> 
         </h2>
         <p className="text-lg md:text-xl lg:text-2xl text-white font-bold mt-4">
-          WELCOME TO OM INDUSTRIES WEBSITE
+          WELCOME TO OM INDUSTRIES 
         </p>
       </div>
 
