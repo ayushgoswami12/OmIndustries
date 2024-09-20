@@ -14,7 +14,7 @@ function Homepage() {
   return (
     <>
 
-    <div className='fpage  bg-yellow-400'>
+    <div className='fpage  '>
     {/* <CustomCursor></CustomCursor> */}
       {/* <Header></Header> */}
       <NewHero></NewHero>
