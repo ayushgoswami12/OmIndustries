@@ -1,5 +1,5 @@
 import BgImg from "../assets/Icons1/bghero1.jpg";
-import Logo from "../assets/Icons1/OMLOGO1.png";
+import Logo from "../assets/Icons1/OMLOGO2.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "./Newhero.css";
