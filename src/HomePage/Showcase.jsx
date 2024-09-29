@@ -53,21 +53,21 @@ function Showcase() {
             transition={{ duration: 1.5, delay: 0.1 }}
             whileInView={{ opacity: 1, x: 0 }}
             className="w-[100%] md:w-[50vw] flex flex-col">
-            <h1 className="text-xl font-bold pb-2 text-blue-500 tracking-widest">WELCOME TO</h1>
-            <h1 className="text-3xl md:text-5xl font-bold pb-2 text-blue-500">
+            <h1 className="text-xl font-bold pb-2 text-yellow-500 tracking-widest">WELCOME TO</h1>
+            <h1 className="text-3xl md:text-5xl font-bold pb-2 text-yellow-500">
               Om <span className="text-black">Industries</span>
             </h1>
             <p className="text-gray-500 text-base md:text-xl font-bold pt-8">
-              <span className="text-blue-500">Om</span>
+              <span className="text-yellow-500">Om</span>
               <span className="text-black"> Industries</span> is a metal casting
               company manufacturing the best quality Metal Casting Products. The
               massive range of products includes High Manganese{" "}
-              <span className="text-blue-500">Steel Casting, S.G.I. Casting, C.I. Casting</span>,
+              <span className="text-yellow-500">Steel Casting, S.G.I. Casting, C.I. Casting</span>,
               etc.
             </p>
 
             <p className="text-gray-500 text-base md:text-xl font-bold pt-8">
-              The company was established in <span className="text-blue-500">1978</span> and has
+              The company was established in <span className="text-yellow-500">1978</span> and has
               since been one of the renowned Cast Iron Castings Manufacturers
               in India. Based in Ahmedabad (Guj), India, the company operates
               with its reputed brand.
@@ -97,32 +97,32 @@ function Showcase() {
         </div>
       </div>
 
-      <section ref={ref} className="bg-gray-900 py-8 mt-10 text-white mb-10">
+      <section ref={ref} className="bg-yellow-500 py-8 mt-10 mx-5 text-white mb-10">
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
 
           <div className="flex flex-col items-center space-y-2 md:space-y-4">
-            <div className="text-blue-300 text-4xl md:text-6xl font-bold">
+            <div className="text-gray-900 text-4xl md:text-6xl font-bold">
               {inView && <CountUp end={3000} duration={3} />}+
             </div>
             <p className="text-sm md:text-lg font-medium">Projects Completed</p>
           </div>
 
           <div className="flex flex-col items-center space-y-2 md:space-y-4">
-            <div className="text-blue-300 text-4xl md:text-6xl font-bold">
+            <div className="text-gray-900 text-4xl md:text-6xl font-bold">
               {inView && <CountUp end={50} duration={3} />}+
             </div>
             <p className="text-sm md:text-lg font-medium">Expert Workers</p>
           </div>
 
           <div className="flex flex-col items-center space-y-2 md:space-y-4">
-            <div className="text-blue-300 text-4xl md:text-6xl font-bold">
+            <div className="text-gray-900 text-4xl md:text-6xl font-bold">
               {inView && <CountUp end={20} duration={3} />}+
             </div>
             <p className="text-sm md:text-lg font-medium">Years of Experience</p>
           </div>
 
           <div className="flex flex-col items-center space-y-2 md:space-y-4">
-            <div className="text-blue-300 text-4xl md:text-6xl font-bold">
+            <div className="text-gray-900 text-4xl md:text-6xl font-bold">
               {inView && <CountUp end={60000} duration={3} />}+
             </div>
             <p className="text-sm md:text-lg font-medium">Happy Clients</p>

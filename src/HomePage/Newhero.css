@@ -1,20 +1,29 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    /* background-color: aqua; */
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    max-width: 100vw; /* Ensure body doesn't exceed viewport width */
-    
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove or comment out this rule */
+/*
+.header img {
+  width: 10vw;
+}
+*/
+
+.header {
+  transition: transform 0.3s ease-in-out;
+}
+
+html, body {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vw; /* Ensure body doesn't exceed viewport width */
+}

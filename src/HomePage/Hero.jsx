@@ -15,16 +15,16 @@ function Hero() {
     <>
       <div id="mainHero" className="flex pt-24">
         <motion.div id="paragraph" className="flex-col flex">
-        <div className="heros">
-  <h1 id="division_para" className="uppercase font-black text-7xl leading-none tracking-tight">WELCOME TO </h1>
-  <h1 id="division_para" className="uppercase font-black text-7xl leading-none tracking-tight">Our website</h1>
-  <h2 id="division_para" className="uppercase font-black text-7xl leading-none tracking-tight ">
-    <span className="text-blue-700">OM <span className="text-blue-700 space-x-2">INDUSTRIES</span></span>.  
-  </h2>
-  <p className="text-lg text-black font-bolder" id="description">
-    WeDu provides an effective and powerful way to manage your projects
-  </p>
-</div>
+          <div className="heros">
+            <h1 id="division_para" className="uppercase font-black text-7xl leading-none tracking-tight">WELCOME TO </h1>
+            <h1 id="division_para" className="uppercase font-black text-7xl leading-none tracking-tight">Our website</h1>
+            <h2 id="division_para" className="uppercase font-black text-7xl leading-none tracking-tight ">
+              <span className="text-blue-700">OM <span className="text-blue-700 space-x-2">INDUSTRIES</span></span>.
+            </h2>
+            <p className="text-lg text-black font-bolder" id="description">
+              WeDu provides an effective and powerful way to manage your projects
+            </p>
+          </div>
 
           <br />
 
